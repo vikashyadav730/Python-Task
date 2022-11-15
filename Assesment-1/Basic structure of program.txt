@@ -1,0 +1,62 @@
+def load_data():
+    print('Loading data from file...')
+    return
+
+
+def display_data():
+    print('Displaying data...')
+    return
+
+
+def rename_set():
+    print('Renaming set...')
+    return
+
+
+def sort_set():
+    print('Sorting set...')
+    return
+
+
+def analyze_set():
+    print('Analyzing the set...')
+    return
+
+
+def get_valid_option():
+    x = input()
+    x = int(x)
+    while x < 1 or x > 6:
+        print('Invalid option!! Please choose any among 1 to 6.')
+        x = input()
+        x = int(x)
+
+    return x
+
+
+print('Welcome to The Smart Statistician!')
+print('Programmed by XYZ\n')
+
+while True:
+    print('Please choose from the following options:')
+    print('\t1 - Load data from a file')
+    print('\t2 - Display the data to the screen')
+    print('\t3 - Rename a set')
+    print('\t4 - Sort a set')
+    print('\t5 - Analyze a set')
+    print('\t6 - Quit')
+
+    option = get_valid_option()
+
+    if option == 1:
+        load_data()
+    elif option == 2:
+        display_data()
+    elif option == 3:
+        rename_set()
+    elif option == 4:
+        sort_set()
+    elif option == 5:
+        analyze_set()
+    elif option == 6:
+        quit()
